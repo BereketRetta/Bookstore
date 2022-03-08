@@ -2,7 +2,7 @@
 
 > This project will lay foundations for your Bookstore website. I will create a React and Redux app. I'll structure my files using the "feature folder" approach. I will also set up routing using React Router.
 
-<!-- ![screenshot](./app_screenshot.png) -->
+![screenshot](./app_screenshot.png)
 
 ## Built With
 
