@@ -8,7 +8,7 @@ export default function BookList() {
     <div>
       <ul>
         {bookList.map((book) => (
-          <Book key={book.id} book={book} />
+          <Book key={book.item_id} book={book} />
         ))}
       </ul>
       <Form />

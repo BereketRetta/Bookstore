@@ -8,21 +8,21 @@ export default function Form() {
   const submitForm = (e) => {
     e.preventDefault();
     const title = e.target.querySelector('.title');
-    const author = e.target.querySelector('.author');
+    const category = e.target.querySelector('.category');
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title: title.value,
-      author: author.value,
+      category: category.value,
     };
     title.value = '';
-    author.value = '';
+    category.value = '';
     dispatch(addBook(newBook));
   };
   return (
     <div>
       <form id="add-book-form" onSubmit={(e) => submitForm(e)}>
         <input placeholder="Book Title" className="title" />
-        <input placeholder="Book Author" className="author" />
+        <input placeholder="Category" className="category" />
         <button type="submit"> Add Book </button>
       </form>
     </div>
