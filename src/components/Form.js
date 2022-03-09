@@ -21,9 +21,12 @@ export default function Form() {
   return (
     <div>
       <form id="add-book-form" onSubmit={(e) => submitForm(e)}>
-        <input placeholder="Book Title" className="title" />
-        <input placeholder="Category" className="category" />
-        <button type="submit"> Add Book </button>
+        <h2>ADD NEW BOOK</h2>
+        <div className="div">
+          <input placeholder="Book Title" className="title" />
+          <input placeholder="Category" className="category" />
+          <button type="submit" className="add-book">ADD BOOK</button>
+        </div>
       </form>
     </div>
   );

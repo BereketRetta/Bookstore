@@ -1,39 +1,173 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fcfcfc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  border: solid 1px #e8e8e8;
+  background: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.813rem;
+  margin: auto 5px;
+}
+
+.head {
+  color: #0290ff;
+  font-size: 1.875rem;
+  font-weight: bolder;
+}
+
+.icon {
+  border: 1px #c4c4c4 solid;
+  padding: 8px;
+  border-radius: 50%;
+  color: #0290ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+ul .list-item {
+  background: #fff;
+  border: 1px solid #c4c4c4;
+  padding: 15px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 100px;
+  box-sizing: border-box;
+}
+
+ul .list-item p {
+  margin: 5px auto;
+}
+
+.book-title {
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 1.575rem;
+  font-weight: bolder;
+}
+
+.cate {
+  font-weight: bolder;
+  opacity: 0.5;
+}
+
+.list-butt {
+  color: #2598f0;
+  font-size: 0.9em;
+  background: transparent;
+  border: none;
+  margin: 5px 10px;
+  border-right: 1px #c4c4c4 solid;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.list-butt:last-child {
+  border: none;
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.oval-2 {
+  width: 4.25rem;
+  height: 4.25rem;
+  border: double 1em transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #307bbe, #379cf6);
+  background-origin: border-box;
+  border-width: 8px;
+  background-clip: content-box, border-box;
+  margin-right: 15px;
+}
+
+.info-p {
+  opacity: 0.3;
+  font-weight: bolder;
+  margin-bottom: 15px !important;
+}
+
+.progress-button {
+  background: #0290ff;
+  border: none;
+  padding: 10px 17px;
+  color: #83c5f7;
+  margin-top: 10px;
+}
+
+#add-book-form {
+  width: 80%;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+  opacity: 0.5;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.div {
+  width: 100%;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  padding: 8px;
+  width: 50%;
+  margin: auto 8px;
+}
+
+.category {
+  width: 25%;
+}
+
+.add-book {
+  background: #0290ff;
+  border: none;
+  width: 15%;
+  padding: 10px;
+  color: #fff;
 }
